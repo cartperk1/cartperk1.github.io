@@ -1,0 +1,549 @@
+@import "animate.min.css";
+
+/*-----------------------------------------------------------------------------------*/
+/* GENERAL
+/*-----------------------------------------------------------------------------------*/
+
+body{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #373737;
+	font-size: 18px;
+}
+
+h1,h2,.h1,.h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+h3,.h3 {
+	font-weight: 400;
+}
+
+h4 {
+	font-weight: 400;
+}
+
+p{
+	color: #373737;
+	font-size: 18px;
+}
+
+.lead{
+	font-weight: 300;
+}
+
+.brand-color {
+	color: #f1484f;
+}
+
+.rwd-line {
+	display: block;
+}
+
+button {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-bottom: 10px;
+	padding: 6px 12px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	border-radius: 5px;
+	vertical-align: middle;
+	text-align: center;
+	white-space: nowrap;
+	font-weight: normal;
+	line-height: 1.428571429;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.visibility{
+	visibility: hidden;
+}
+
+.animated{
+	visibility: visible!important;
+}
+
+.content {
+	padding-top: 100px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	KEY COLOR
+/*-----------------------------------------------------------------------------------*/
+
+/*---- Typography ----*/
+header h1, 
+.payoff h1,
+.details .carousel,
+.social a:hover{
+	color: #ffffff;
+}
+
+.features p{
+	color: #06b872;
+}
+
+/*---- Background ----*/
+.features,
+.detail .carousel-indicators .active {
+	background: #f1484f;	
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* NAVBAR
+/*-----------------------------------------------------------------------------------*/
+
+
+nav.navbar{
+	position: fixed;
+	top: -72px;
+	margin-bottom: 0px;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+	border-radius: 0px;
+	transition: all 0.2s;
+}
+
+.navbar-nav{
+	float: right;
+}
+
+nav.navbar.fixed-to-top{
+	top: 0px;
+}
+
+.navbar-default{
+	border-color: #c0392b;
+	background: #f1484f;
+	opacity: 0.95;
+	display: none;
+
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	color: #ffbbbc;;	
+	cursor: pointer;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.navbar-default .navbar-brand{
+	color: #ffffff;
+	font-weight: 600;	
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #ffbbbc;
+}
+
+.navbar .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #ffbbbc;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* HEADER 
+/*-----------------------------------------------------------------------------------*/
+
+header{
+	padding: 50px 0px 0px 0px;
+	background: url('../img/homepage-photo.jpg');
+	background-size: cover;
+	background-position:center; 
+	background-repeat: no-repeat;
+	color: white;
+ 	opacity : 0.2;	
+}
+
+header h1{
+	font-size: 60px;
+	font-weight: 500;
+	text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+header, .social{
+	background-position-y: 0px;
+}
+
+header h2.lead{
+	font-size: 30px;
+	font-weight: 400;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+}
+
+.nexus-img {
+	height: 500px;
+}
+
+.carousel-nexus{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.center-img{
+	margin: 0 auto;
+}
+
+.carousel-nexus-inner{
+	margin-right: auto;
+	margin-left: auto;
+	height: 640px;
+	overflow: hidden;
+	padding: 61px 0px 0px 7px;
+}
+*+
+.carousel-nexus .logo {
+	padding-top: 50%;
+}
+
+header .carousel {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 95px 0px 0px 4px;
+	width: 282px;
+}
+
+header .carousel-indicators .active {
+	width: 15px;
+	height: 15px;
+	background: #444444;
+}
+
+header .carousel-indicators {
+	bottom: -63px;
+}
+
+header .carousel-indicators li {
+	display: inline-block;
+	margin: 1px;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #666666;
+	border-radius: 10px;
+	text-indent: -999px;
+	cursor: pointer;
+}
+
+.download button {
+	width: 285px;
+	height: 101px;
+	background: url(../img/googleplaystore.png) no-repeat;
+}
+
+.download {
+	margin-top: 10px;
+}
+
+.download .img-responsive {
+	margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Intro 
+/*-----------------------------------------------------------------------------------*/
+
+.intro {
+	padding-top: 50px;
+	min-height: 200px;
+}
+
+.intro-detail .img-responsive {
+	margin: 0 auto;
+}
+
+.heading{
+	color: #f1484f;
+	font-weight: 400;
+	font-size: 18px
+}
+
+.info {
+	color: #373737;
+}
+
+.sectionheading {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 400;
+	color: #56C8A1;
+}
+
+.pageheading {
+	text-align: left;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 400;
+	color: #56C8A1;	
+	font-size: 24px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Detail
+/*-----------------------------------------------------------------------------------*/
+
+.howitworks {
+	padding-top: 30px;
+	background-color: #f3f3ec;
+}
+
+.howitworks .detail{
+	margin-top: 5%;
+}
+
+.detail p{
+	margin-bottom: 60px;
+}
+
+.detail .app-screenshot{
+	overflow: hidden;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.detail .app-screenshot img{
+	margin-right: auto;
+	margin-left: auto;
+	width: 282px;
+}
+
+.detail .carousel-indicators {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 5px;
+	padding-bottom: 8px;
+	width: 100%;
+	border-top: 1px solid #eee;
+	background: #ffffff;
+}
+
+.detail .carousel-indicators .active {
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+}
+
+.detail .carousel-indicators li {
+	display: inline-block;
+	margin: 1px;
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+	background: #eeeeee;
+	text-indent: -999px;
+	cursor: pointer;
+}
+
+
+.connect {
+	padding: 10px 0px 0px 0px;
+	margin-top: 10%;
+	background: url('../img/connect-photo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.footerbreak {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.footer a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #373737;
+}
+
+.brand-detail {
+	margin-top: 30px;
+}
+
+.brandfeature {
+	margin-top: 30px;
+}
+
+.brandfeatureheading {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 400;
+	color: #f1484f;	
+}
+
+.brandfeaturelead {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 400;	
+	color: #f1484f;
+
+}-
+
+.teamname {
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+.teamheading {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 400;
+	color: #f1484f;
+	vertical-align: center;
+}
+
+.linebreak {
+  border-top: 5px dotted #f1484f;
+  height: 1px;
+}
+
+.leagalsection {
+  margin-bottom: 5px;
+}
+
+.legalsection .heading {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 400;
+	color: #f1484f;	
+}
+
+.legalpage p {
+}
+
+.legalpage ul {
+}
+
+.headingdate {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 400;
+	color: #000000;
+	text-align: right;
+}
+
+.footer .nav li {
+} 
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	MEDIA QUERIES
+/*-----------------------------------------------------------------------------------*/
+
+@media (min-width:768px) {
+	.image-left {
+	   max-width: 100%;
+	   float: left !important;
+	   margin-left: 0px !important;
+	   margin-right: 30px !important;
+	}	
+}
+
+@media (max-width: 768px) {
+	.navbar-nav {
+		float: left;
+		text-align: left;
+	}
+
+}
+
+@media (min-width: 992px) {
+	h1,.h1 {
+		font-size: 42px;
+	}
+
+	h2,.h2 {
+		font-size: 36px;
+	}
+
+	h3,.h3 {
+		font-size: 30px
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	p{
+		font-size: 18px;
+	}
+
+	button{
+		font-size: 18px;
+	}
+
+	.brand {
+		font-size: 90px;
+	}
+
+	header h1{
+		font-size: 70px;
+		font-weight: 500;
+		text-shadow: 4px 4px 3px rgba(0,0,0,0.6);
+	}
+
+	header h2.lead {
+		font-weight: 400;
+		font-size: 30px;
+		text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+	}
+
+	.rwd-line {
+		display: inline;
+	}
+
+	.download {
+		float: right !important;
+		margin-top: 400px;
+	}
+
+	.detail .info {
+		padding-top: 100px;
+	}
+
+	.pageheading {
+		font-size: 48px;
+	}
+
+	.heading {
+		font-size: 24px;
+	}
+
+	.sectionheading {
+		font-size: 48px;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+    .purchasebutton.app-store, .get-it button.app-store{
+        background: url(../img/badge-appstore@2x.png) #3a3a3a no-repeat 0px 5px;
+        background-size: 98%;
+    	color: white;
+    }
+}

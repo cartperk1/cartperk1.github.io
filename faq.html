@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>CartPerk - Go Shopping Get Rewarded</title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">	
+    <!-- CSS 
+    ================================================== -->
+    <!-- Bootstrap 3-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400|Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
+    <!-- Template Styles -->
+    <link href="css/cartperk.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+	<!-- NAVBAR
+	================================================== -->
+	<nav class="navbar navbar-default fixed-to-top" role="navigation" style="display:block;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<!--Replace text with your app name or logo image-->
+				<a class="navbar-brand" href="index.html">CartPerk</a>
+
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container content legalpage">
+	<div class="text-left">	
+		<br>
+		<div class="legalsection">
+		    <p class="heading">How do I earn rewards on CartPerk ?</p>
+			<p>3 simple steps –</p>
+			<ul>
+				<li>Buy any of the listed products at your favorite store</li>
+				<li>Upload the complete receipt. Earn cashback upon validation</li>
+				<li>Redeem your earnings as Mobile Recharge, Movie Tickets and Gift Vouchers</li>
+			</ul>
+		</div>
+		<div class="legalsection">
+		    <p class="heading">How is CartPerk rewarding me ?</p>
+			<p>We directly partner with brands to get you these exclusive offers.</p>
+		</div>
+		<div class="legalsection">
+		    <p class="heading">Interested in more details ?</p>
+			<p>You can read detailed FAQ <a href="faq_detailed.html#from-app">here</a>
+		</div>
+	</div>
+	<section class="footer">
+		<hr class="footerbreak"/>
+	</section>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		var currentHash = window.location.hash;
+		if (currentHash=="#from-app") {
+		   $('.navbar').hide();
+		   $('.content').css("padding-top","10px")
+		}
+	</script>
+</body>
+</html>
